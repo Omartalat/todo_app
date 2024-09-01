@@ -1,7 +1,13 @@
 let input = document.querySelector(".input");
 let submit = document.querySelector(".add");
 let tasksdiv = document.querySelector(".tasks");
+
+// TODO-4: make tasks variable equal to local storage
 let tasks = [];
+if (localStorage.getItem('Tasks')) {
+  tasks = JSON.parse(localStorage.getItem('Tasks'))
+}
+
 
 // TODO-1: Add the task to tasks array
 
@@ -50,4 +56,11 @@ function showTasks(tasks) {
 
 function updateTasks(tasks) {
   window.localStorage.setItem("Tasks", JSON.stringify(tasks));
+}
+
+function getTasks() {
+  let data = window.localStorage.getItem('Tasks')
+  if (data) {
+    tasks = JSON.parse(data)
+  }
 }
