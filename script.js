@@ -19,6 +19,7 @@ function addTask(taskTitle) {
     completed: false,
   };
   tasks.push(task);
+  updateTasks(tasks);
   showTasks(tasks);
 }
 
@@ -43,4 +44,10 @@ function showTasks(tasks) {
     span.appendChild(document.createTextNode("Delete"));
     div.appendChild(span);
   });
+}
+
+// TODO-3 : save tasks in local Storage.
+
+function updateTasks(tasks) {
+  window.localStorage.setItem("Tasks", JSON.stringify(tasks));
 }
