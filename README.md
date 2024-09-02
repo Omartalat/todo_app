@@ -11,7 +11,7 @@ Responsive Design: Optimized for both desktop and mobile devices.
 HTML, CSS, and JavaScript
 
 ## Authors
-Omar Talat 
+Omar Talat - [Github](https://github.com/Omartalat) / [Twitter](https://x.com/DrOmartalat)
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are welcome!
